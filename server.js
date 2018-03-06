@@ -1,12 +1,20 @@
-var express = require('express');
-var app = express();
+// var express = require('express');
+// var app = express();
+//
+// app.listen(80, function() {
+//     console.log('Chatfuel Bot-Server listening on port 80...');
+// });
+//
+// app.get('/', function(req, res) {
+//     res.setHeader('Content-Type', 'application/json');
+//     res.send(JSON.stringify({ name: "pushpa kumara" }));
+// });
+var express = require("express");
+var router = express.Router();
 
-app.listen(80, function() {
-    console.log('Chatfuel Bot-Server listening on port 80...');
+router.get("/", function(req, res, next) {
+    var jsonData = {"name": "Pushpa Kumara"};
+    res.json(jsonData);
 });
 
-app.get('/*', function(req, res) {
-    var jsonResponse = [];
-    jsonResponse.push({ "myText": "Hi. " + (Math.random() * 5 + 1).toFixed(0) + " is a lucky number..." });
-    res.send(jsonResponse);
-});
+module.exports = router;

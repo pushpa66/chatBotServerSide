@@ -1,11 +1,27 @@
 {
-  "name": "chatBotServerSide",
-  "description": "ChatBot API testing sample Node to Heroku app",
+  "name": "chatbot-server-side",
+  "version": "1.0.0",
+  "description": "chatbot server",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "dependencies": {
-    "express": "~4.9.8"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushpa66/chatBotServerSide.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "pushpa kumara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pushpa66/chatBotServerSide/issues"
+  },
+  "homepage": "https://github.com/pushpa66/chatBotServerSide#readme"
 }
